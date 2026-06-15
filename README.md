@@ -23,9 +23,9 @@
 
 ## Overview
 
-Chromebook enrollment is slow and repetitive: each device takes an IT staff member 5–10 minutes of walking through the same OOBE screens — Wi-Fi setup, the `Ctrl+Alt+E` enrollment shortcut, credential entry, waiting for the configuration download. For one device it's fine; for a school district provisioning hundreds, it becomes hours of manual keyboard work.
+Chromebook enrollment is slow and repetitive: each device takes an IT staff member 5–10 minutes of walking through the same OOBE screens, Wi-Fi setup, the `Ctrl+Alt+E` enrollment shortcut, credential entry, waiting for the configuration download. For one device it's fine; for a school district provisioning hundreds, it becomes hours of manual keyboard work.
 
-This project, deployed at Blue Hills Regional Technical, automated the flow using an Arduino Pro Micro as a USB HID keyboard. Plug the Arduino into a freshly-powerwashed Chromebook, and the board takes over — connects to Wi-Fi, triggers enrollment, types credentials, waits for configuration to download, and signals completion via the on-board LED.
+This project, deployed at Blue Hills Regional Technical, automated the flow using an Arduino Pro Micro as a USB HID keyboard. Plug the Arduino into a freshly-powerwashed Chromebook, and the board takes over, connects to Wi-Fi, triggers enrollment, types credentials, waits for configuration to download, and signals completion via the on-board LED.
 
 ## Results
 
@@ -52,7 +52,7 @@ A debug pin (D2 → GND) skips the flow for safe testing.
 
 This sketch is a **trimmed fork of [Centipede](http://labs.amplifiedit.com/centipede)** (CDW Amplified for Education, MIT License) — the de facto open-source Chromebook enrollment automator.
 
-The version handed to me did not work for our ChromeOS 137 fleet — the UI navigation sequences (tab counts, down-arrow counts, timing windows) were tuned for older OOBE flows. I rebuilt them by:
+The version handed to me did not work for our ChromeOS 137 fleet, the UI navigation sequences (tab counts, down-arrow counts, timing windows) were tuned for older OOBE flows. I rebuilt them by:
 
 1. **Reading through the upstream Centipede code** to understand the architecture and intent of each function.
 2. **Stepping through the ChromeOS 137 OOBE manually**, counting the keystrokes required between each screen and timing how long each transition took.
@@ -80,7 +80,7 @@ Result: same proven flow, ~70% smaller codebase, easier to read and maintain.
 | Cable | USB-A to micro-USB (data, not charge-only) |
 | Optional | Jumper wire for the debug pin (D2 → GND) |
 
-A regular Arduino Uno or Nano **will not work** — they lack native HID and cannot emulate a keyboard without additional firmware.
+A regular Arduino Uno or Nano **will not work**, they lack native HID and cannot emulate a keyboard without additional firmware.
 
 ## Setup
 
