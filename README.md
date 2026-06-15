@@ -1,4 +1,4 @@
-# chromebook-enroll
+# chromebook-enrollment
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](#license)
 [![Last commit](https://img.shields.io/github/last-commit/davidribeiro-dev/chromebook-enrollment)](https://github.com/davidribeiro-dev/chromebook-enrollment/commits/main)
