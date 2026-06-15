@@ -1,0 +1,8 @@
+// config.h.example — Copy this to config.h and fill in your values.
+   // config.h is gitignored. NEVER commit your real credentials.
+   #pragma once
+
+   #define WIFI_SSID      "YourSchoolWiFi"
+   #define WIFI_PASSWORD  "YourWiFiPassword"
+   #define USER_EMAIL     "you@school.org"
+   #define USER_PASSWORD  "YourEnrollmentPassword"
