@@ -1,7 +1,7 @@
 # chromebook-enroll
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](#license)
-[![Last commit](https://img.shields.io/github/last-commit/davidribeiro-dev/chromebook-enroll)](https://github.com/davidribeiro-dev/chromebook-enroll/commits/main)
+[![Last commit](https://img.shields.io/github/last-commit/davidribeiro-dev/chromebook-enrollment)](https://github.com/davidribeiro-dev/chromebook-enrollment/commits/main)
 [![Made with Arduino](https://img.shields.io/badge/Made%20with-Arduino-00979D?logo=arduino)](https://www.arduino.cc/)
 [![Forked from Centipede](https://img.shields.io/badge/forked%20from-Centipede-orange)](http://labs.amplifiedit.com/centipede)
 
