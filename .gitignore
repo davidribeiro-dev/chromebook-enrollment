@@ -1,0 +1,10 @@
+config.h
+*.hex
+*.elf
+*.o
+*.d
+*.lst
+*.map
+build/
+.DS_Store
+Thumbs.db
